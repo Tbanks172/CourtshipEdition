@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Courtship Edition Toolkit &mdash; Don&rsquo;t Just Plan a Wedding. Build a Marriage.</title>
+<meta name="description" content="Two books + 120 conversation cards. Everything you need to see clearly, communicate honestly, and build a marriage that still has a spark long after the wedding day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+/*
+PALETTE — Sophisticated, covenant, editorial
+Deep emerald:  #1A4A3A  (wisdom, depth, seriousness)
+Warm gold:     #C9920A  (covenant, premium, light)
+Ivory:         #FAF7F0  (clarity, openness)
+Blush:         #F5E8DC  (warmth, tenderness)
+Off-white:     #F2EDE4  (section alt)
+Ink:           #1A1208  (warm dark)
+Body:          #2E2A1E  (warm readable)
+Muted:         #8A7A5A  (captions)
+Border:        #E0D4BE  (warm dividers)
+Accent red:    #8B2A2A  (warning, pattern book)
+Accent purple: #4A2060  (card deck)
+*/
+
+body {
+font-family: ‘DM Sans’, ‘Helvetica Neue’, sans-serif;
+background: #FAF7F0;
+color: #1A1208;
+overflow-x: hidden;
+}
+
+/* ── ANNOUNCE ── */
+.announce {
+background: #1A4A3A;
+text-align: center;
+padding: 11px 16px;
+font-size: 12px;
+font-weight: 600;
+color: #C9920A;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+
+/* ── NAV ── */
+nav {
+background: #FAF7F0;
+border-bottom: 1.5px solid #E0D4BE;
+padding: 18px 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0;
+z-index: 200;
+box-shadow: 0 1px 20px rgba(26,74,58,0.06);
+}
+.logo {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 21px;
+font-weight: 700;
+color: #1A1208;
+text-decoration: none;
+}
+.logo em { font-style: italic; color: #1A4A3A; }
+.nav-btn {
+background: #1A4A3A;
+color: #C9920A;
+font-size: 13px;
+font-weight: 600;
+padding: 11px 26px;
+border-radius: 3px;
+text-decoration: none;
+letter-spacing: 0.3px;
+border: 1.5px solid #C9920A;
+transition: opacity .2s;
+}
+.nav-btn:hover { opacity: .87; }
+
+/* ── HERO ── */
+.hero {
+background: linear-gradient(160deg, #0E2A1E 0%, #1A4A3A 55%, #205A44 100%);
+min-height: 100vh;
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+position: relative;
+overflow: hidden;
+}
+.hero::before {
+content: ‘’;
+position: absolute;
+width: 700px; height: 700px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(201,146,10,0.12) 0%, transparent 65%);
+top: -200px; right: -100px;
+pointer-events: none;
+}
+.hero::after {
+content: ‘’;
+position: absolute;
+width: 500px; height: 500px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 65%);
+bottom: -150px; left: -80px;
+pointer-events: none;
+}
+
+/* sparkle dots */
+.sp { position:absolute; border-radius:50%; pointer-events:none; }
+.s1 { width:7px; height:7px; background:#C9920A; opacity:0.35; top:20%; left:5%; }
+.s2 { width:4px; height:4px; background:#C9920A; opacity:0.25; top:45%; left:40%; }
+.s3 { width:5px; height:5px; background:#ffffff; opacity:0.12; bottom:28%; left:12%; }
+.s4 { width:6px; height:6px; background:#C9920A; opacity:0.2; top:18%; right:24%; }
+.s5 { width:3px; height:3px; background:#ffffff; opacity:0.15; bottom:18%; right:18%; }
+
+.hero-left {
+padding: 100px 56px 100px 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: 2;
+}
+.hero-kicker {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 28px;
+}
+.hero-kicker-line { width: 36px; height: 1.5px; background: #C9920A; }
+.hero-kicker-text {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #C9920A;
+}
+.hero h1 {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: clamp(44px, 5vw, 80px);
+font-weight: 700;
+line-height: 1.02;
+color: #ffffff;
+letter-spacing: -2px;
+margin-bottom: 28px;
+}
+.hero h1 em { font-style: italic; color: #D4A843; display: block; }
+.hero-hr { width: 56px; height: 1.5px; background: #C9920A; margin-bottom: 28px; }
+.hero-sub {
+font-size: 17px;
+color: rgba(255,255,255,0.62);
+font-weight: 300;
+line-height: 1.85;
+max-width: 440px;
+margin-bottom: 44px;
+}
+.hero-sub strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+
+/* bundle preview badges */
+.bundle-badges {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-bottom: 44px;
+}
+.bb {
+display: flex;
+align-items: center;
+gap: 14px;
+background: rgba(255,255,255,0.06);
+border: 1px solid rgba(201,146,10,0.2);
+border-radius: 6px;
+padding: 12px 16px;
+}
+.bb-icon { font-size: 20px; flex-shrink: 0; }
+.bb-label { font-size: 13px; color: rgba(255,255,255,0.7); font-weight: 400; line-height: 1.4; }
+.bb-label strong { color: #ffffff; font-weight: 600; display: block; }
+
+.hero-cta {
+display: inline-block;
+background: #C9920A;
+color: #1A1208;
+font-size: 16px;
+font-weight: 700;
+padding: 18px 48px;
+border-radius: 3px;
+text-decoration: none;
+box-shadow: 0 12px 40px rgba(201,146,10,0.4);
+transition: transform .2s, box-shadow .2s;
+letter-spacing: 0.3px;
+margin-bottom: 12px;
+display: block;
+max-width: 380px;
+text-align: center;
+}
+.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 20px 50px rgba(201,146,10,0.5); }
+.hero-note { font-size: 12px; color: rgba(255,255,255,0.28); letter-spacing: 0.5px; }
+
+/* right panel */
+.hero-right {
+padding: 80px 64px 80px 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: 2;
+}
+.price-card {
+background: rgba(255,255,255,0.07);
+border: 1.5px solid rgba(201,146,10,0.25);
+border-radius: 12px;
+padding: 40px 36px;
+}
+.pc-kicker {
+font-size: 10px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: rgba(255,255,255,0.3);
+margin-bottom: 10px;
+}
+.pc-title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 22px;
+font-weight: 700;
+color: #ffffff;
+line-height: 1.25;
+margin-bottom: 24px;
+}
+.pc-price {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 72px;
+font-weight: 700;
+color: #C9920A;
+line-height: 1;
+letter-spacing: -3px;
+margin-bottom: 4px;
+}
+.pc-note { font-size: 13px; color: rgba(255,255,255,0.28); margin-bottom: 28px; }
+.pc-btn {
+display: block;
+width: 100%;
+background: #C9920A;
+color: #1A1208;
+font-size: 15px;
+font-weight: 700;
+padding: 16px;
+border-radius: 3px;
+text-decoration: none;
+text-align: center;
+transition: opacity .2s;
+margin-bottom: 24px;
+}
+.pc-btn:hover { opacity: .9; }
+.pc-list { display: flex; flex-direction: column; gap: 10px; }
+.pcl {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+font-size: 13px;
+color: rgba(255,255,255,0.48);
+line-height: 1.5;
+font-weight: 300;
+}
+.pcl-dot { width:5px; height:5px; border-radius:50%; background:#C9920A; flex-shrink:0; margin-top:5px; }
+.pc-divider { height:1px; background:rgba(255,255,255,0.08); margin:20px 0; }
+.pc-guar { font-size: 12px; color: rgba(255,255,255,0.22); line-height: 1.6; }
+.pc-guar a { color: #C9920A; text-decoration: none; }
+
+/* ── STAT BAR ── */
+.stat-bar {
+background: #C9920A;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.sb {
+padding: 30px 20px;
+text-align: center;
+border-right: 1px solid rgba(255,255,255,0.2);
+}
+.sb:last-child { border-right: none; }
+.sb-n {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 44px;
+font-weight: 700;
+color: #1A1208;
+line-height: 1;
+letter-spacing: -2px;
+}
+.sb-l { font-size: 10px; font-weight: 600; color: rgba(26,18,8,0.6); letter-spacing: 2px; text-transform: uppercase; margin-top: 5px; }
+
+/* ── SHARED ── */
+.sec { padding: 96px 48px; }
+.inn { max-width: 720px; margin: 0 auto; }
+.inn.wide { max-width: 1040px; }
+.inn.mid { max-width: 840px; }
+.bg-ivory  { background: #FAF7F0; }
+.bg-blush  { background: #F5E8DC; }
+.bg-off    { background: #F2EDE4; }
+.bg-wh     { background: #ffffff; }
+.bg-ink    { background: #1A1208; }
+.bg-emerald{ background: #1A4A3A; }
+
+/* ── SECTION LABEL ── */
+.sl {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+font-size: 10px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #1A4A3A;
+margin-bottom: 20px;
+}
+.sl::before { content:’’; width:24px; height:1.5px; background:#1A4A3A; }
+.sl.gold { color: #C9920A; }
+.sl.gold::before { background: #C9920A; }
+
+/* ── HEADLINES ── */
+h2.bh {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: clamp(32px, 4.5vw, 56px);
+font-weight: 700;
+line-height: 1.06;
+color: #1A1208;
+letter-spacing: -1.5px;
+margin-bottom: 28px;
+}
+h2.bh em { font-style: italic; color: #1A4A3A; }
+h2.bh.lt { color: #ffffff; }
+h2.bh.lt em { color: #D4A843; }
+
+/* ── BODY ── */
+.p { font-size: 17px; line-height: 1.9; color: #2E2A1E; font-weight: 300; margin-bottom: 22px; }
+.p strong { font-weight: 600; color: #1A1208; }
+.p.lt { color: rgba(255,255,255,0.58); }
+.p.lt strong { color: #ffffff; }
+
+/* ── PULLQUOTE ── */
+.pq {
+margin: 48px 0;
+padding: 40px 44px;
+background: #1A4A3A;
+border-radius: 4px;
+position: relative;
+overflow: hidden;
+}
+.pq::before {
+content: ‘\201C’;
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 180px;
+color: rgba(201,146,10,0.1);
+position: absolute;
+top: -30px; left: 16px;
+line-height: 1;
+pointer-events: none;
+}
+.pq p {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: clamp(20px, 2.8vw, 28px);
+font-style: italic;
+font-weight: 700;
+color: #ffffff;
+line-height: 1.42;
+position: relative;
+}
+
+/* ── DARK STRIP ── */
+.ds {
+background: #1A1208;
+padding: 96px 48px;
+position: relative;
+overflow: hidden;
+}
+.ds::before {
+content: ‘’;
+position: absolute;
+width: 700px; height: 700px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(26,74,58,0.3) 0%, transparent 60%);
+top: -250px; right: -150px;
+pointer-events: none;
+}
+.ds .inn { position: relative; }
+
+/* ── 7 PATTERNS ── */
+.patterns-grid { display: grid; gap: 12px; margin-top: 40px; }
+.pattern-card {
+display: flex;
+gap: 18px;
+align-items: flex-start;
+padding: 24px 26px;
+background: #ffffff;
+border: 1.5px solid #E0D4BE;
+border-radius: 8px;
+position: relative;
+overflow: hidden;
+transition: transform .15s, box-shadow .15s;
+}
+.pattern-card:hover { transform: translateX(4px); box-shadow: 0 6px 24px rgba(26,74,58,0.1); }
+.pattern-card::before {
+content: ‘’;
+position: absolute;
+top: 0; left: 0; bottom: 0;
+width: 4px;
+background: #8B2A2A;
+}
+.pattern-num {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 28px;
+font-weight: 700;
+color: #E0D4BE;
+line-height: 1;
+flex-shrink: 0;
+min-width: 40px;
+margin-top: -2px;
+}
+.pattern-title { font-weight: 600; font-size: 15px; color: #1A1208; margin-bottom: 5px; }
+.pattern-desc { font-size: 13px; color: #2E2A1E; line-height: 1.65; font-weight: 300; }
+
+/* ── 3 PRODUCTS ── */
+.products-stack { display: grid; gap: 24px; margin-top: 40px; }
+.product-card {
+border-radius: 12px;
+overflow: hidden;
+border: 1.5px solid #E0D4BE;
+display: grid;
+grid-template-columns: 8px 1fr;
+}
+.product-accent { }
+.product-body { padding: 36px 40px; background: #ffffff; }
+.product-tag {
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 8px;
+}
+.product-icon { font-size: 28px; margin-bottom: 14px; display: block; }
+.product-title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 26px;
+font-weight: 700;
+color: #1A1208;
+line-height: 1.15;
+margin-bottom: 14px;
+}
+.product-desc { font-size: 15px; color: #2E2A1E; line-height: 1.82; font-weight: 300; }
+.product-desc strong { font-weight: 600; color: #1A1208; }
+.product-bullets { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.pb {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+font-size: 13px;
+color: #2E2A1E;
+line-height: 1.5;
+font-weight: 300;
+}
+.pb-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+
+/* ── SAMPLE CARD ── */
+.sample-wrap { text-align: center; margin: 40px 0; }
+.sample-label {
+font-size: 10px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #4A2060;
+margin-bottom: 20px;
+}
+.sample-card {
+display: inline-block;
+background: #ffffff;
+border: 1.5px solid #E0D4BE;
+border-radius: 16px;
+padding: 44px 48px;
+max-width: 480px;
+box-shadow: 0 20px 60px rgba(26,18,8,0.1);
+position: relative;
+}
+.sample-card::before {
+content: ‘’;
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 4px;
+background: linear-gradient(90deg, #1A4A3A, #C9920A, #4A2060);
+border-radius: 16px 16px 0 0;
+}
+.sample-cat {
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #1A4A3A;
+margin-bottom: 16px;
+}
+.sample-q {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 22px;
+font-weight: 700;
+color: #1A1208;
+line-height: 1.45;
+font-style: italic;
+}
+
+/* ── TRANSFORMATION CARDS ── */
+.tf-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-top: 40px;
+}
+.tfc {
+background: #FAF7F0;
+border: 1.5px solid #E0D4BE;
+border-radius: 8px;
+padding: 36px 28px;
+position: relative;
+overflow: hidden;
+transition: transform .2s, box-shadow .2s;
+}
+.tfc:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(26,74,58,0.1); }
+.tfc::after { content:’’; position:absolute; bottom:0; left:0; right:0; height:3px; background:#1A4A3A; }
+.tfc-n {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 52px;
+font-weight: 700;
+color: #E0D4BE;
+line-height: 1;
+letter-spacing: -2px;
+margin-bottom: 16px;
+}
+.tfc-title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 22px;
+font-weight: 700;
+color: #1A1208;
+margin-bottom: 12px;
+line-height: 1.2;
+}
+.tfc-body { font-size: 14px; color: #2E2A1E; line-height: 1.72; font-weight: 300; }
+
+/* ── WHO THIS IS FOR ── */
+.who-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin-top: 40px;
+}
+.wc {
+background: #FAF7F0;
+border: 1.5px solid #E0D4BE;
+border-radius: 8px;
+padding: 32px 28px;
+position: relative;
+overflow: hidden;
+}
+.wc::before { content:’’; position:absolute; top:0; left:0; bottom:0; width:4px; background:linear-gradient(180deg, #1A4A3A, #C9920A); }
+.wc-icon { font-size: 26px; margin-bottom: 14px; }
+.wc-title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 20px;
+font-weight: 700;
+color: #1A1208;
+margin-bottom: 8px;
+line-height: 1.2;
+}
+.wc-desc { font-size: 14px; color: #2E2A1E; line-height: 1.7; font-weight: 300; }
+
+/* ── TESTIMONIALS ── */
+.tg {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-top: 40px;
+}
+.tc {
+background: #FAF7F0;
+border: 1.5px solid #E0D4BE;
+border-radius: 8px;
+padding: 32px 28px;
+position: relative;
+}
+.tc::after {
+content: ‘\201C’;
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 120px;
+color: #1A4A3A;
+opacity: 0.06;
+position: absolute;
+top: 0; right: 16px;
+line-height: 1;
+}
+.tc-stars { color: #C9920A; font-size: 14px; margin-bottom: 14px; }
+.tc-text { font-size: 15px; color: #2E2A1E; line-height: 1.75; font-style: italic; font-weight: 300; margin-bottom: 20px; position: relative; }
+.tc-name { font-weight: 600; font-size: 13px; color: #1A1208; }
+.tc-role { font-size: 12px; color: #8A7A5A; margin-top: 2px; }
+
+/* ── PROMISE ── */
+.promise {
+background: linear-gradient(135deg, #1A4A3A 0%, #0E2A1E 100%);
+padding: 80px 48px;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+.promise::before {
+content: ‘’;
+position: absolute;
+inset: 0;
+background: repeating-linear-gradient(
+-55deg, transparent, transparent 48px,
+rgba(201,146,10,0.03) 48px, rgba(201,146,10,0.03) 96px
+);
+}
+.promise h3 {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: clamp(26px, 4vw, 48px);
+font-weight: 700;
+color: #ffffff;
+line-height: 1.15;
+letter-spacing: -1.5px;
+max-width: 800px;
+margin: 0 auto;
+position: relative;
+}
+.promise h3 em { font-style: italic; color: #D4A843; }
+
+/* ── CTA ── */
+.cta-sec {
+background: #1A1208;
+padding: 100px 48px;
+position: relative;
+overflow: hidden;
+}
+.cta-sec::before {
+content: ‘’;
+position: absolute;
+width: 800px; height: 800px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(26,74,58,0.25) 0%, transparent 60%);
+top: -300px; right: -200px;
+pointer-events: none;
+}
+.cta-sec::after {
+content: ‘’;
+position: absolute;
+width: 600px; height: 600px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(201,146,10,0.06) 0%, transparent 65%);
+bottom: -200px; left: -100px;
+pointer-events: none;
+}
+.cta-inner {
+max-width: 640px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+}
+.cta-kicker {
+font-size: 10px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #C9920A;
+margin-bottom: 24px;
+}
+.cta-h {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: clamp(36px, 5vw, 62px);
+font-weight: 700;
+color: #ffffff;
+line-height: 1.04;
+letter-spacing: -2px;
+margin-bottom: 20px;
+}
+.cta-h em { font-style: italic; color: #C9920A; }
+.cta-sub {
+font-size: 16px;
+color: rgba(255,255,255,0.45);
+font-weight: 300;
+line-height: 1.8;
+margin-bottom: 48px;
+}
+.cta-price-row {
+display: flex;
+align-items: baseline;
+justify-content: center;
+gap: 6px;
+margin-bottom: 8px;
+}
+.cta-sym {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 30px;
+font-weight: 700;
+color: rgba(255,255,255,0.35);
+line-height: 1;
+}
+.cta-price {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 88px;
+font-weight: 700;
+color: #C9920A;
+line-height: 1;
+letter-spacing: -4px;
+}
+.cta-price-note { font-size: 13px; color: rgba(255,255,255,0.25); margin-bottom: 36px; }
+.cta-btn {
+display: block;
+width: 100%;
+background: #C9920A;
+color: #1A1208;
+font-size: 18px;
+font-weight: 700;
+padding: 22px;
+border-radius: 3px;
+text-decoration: none;
+box-shadow: 0 12px 40px rgba(201,146,10,0.4);
+transition: transform .2s, box-shadow .2s;
+margin-bottom: 28px;
+letter-spacing: 0.3px;
+}
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 20px 50px rgba(201,146,10,0.5); }
+.cta-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+text-align: left;
+margin-bottom: 28px;
+}
+.ci {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+font-size: 13px;
+color: rgba(255,255,255,0.45);
+font-weight: 300;
+line-height: 1.45;
+}
+.ci-dot { width:5px; height:5px; border-radius:50%; background:#1A4A3A; flex-shrink:0; margin-top:5px; }
+.ci strong { color: rgba(255,255,255,0.82); font-weight: 600; }
+.cta-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 24px 0; }
+.cta-guar { font-size: 13px; color: rgba(255,255,255,0.22); line-height: 1.65; }
+.cta-guar a { color: #C9920A; text-decoration: none; }
+
+/* ── FOOTER ── */
+footer {
+background: #0E0A04;
+padding: 56px 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 24px;
+}
+.fl {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 20px;
+font-weight: 700;
+color: #ffffff;
+}
+.fl em { font-style: italic; color: #C9920A; }
+footer p { font-size: 13px; color: rgba(255,255,255,0.22); line-height: 1.8; }
+footer a { color: #1A4A3A; text-decoration: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 1024px) {
+.hero { grid-template-columns: 1fr; min-height: auto; }
+.hero-left { padding: 80px 32px; }
+.hero-right { padding: 60px 32px; }
+.tf-grid { grid-template-columns: 1fr; }
+.tg { grid-template-columns: 1fr; }
+.who-grid { grid-template-columns: 1fr; }
+.cta-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+nav { padding: 14px 20px; }
+.nav-btn { padding: 9px 14px; font-size: 12px; }
+.sec { padding: 72px 20px; }
+.ds { padding: 72px 20px; }
+.cta-sec { padding: 72px 20px; }
+.stat-bar { grid-template-columns: 1fr 1fr; }
+.sb { padding: 24px 14px; }
+.cta-price { font-size: 64px; }
+.promise { padding: 64px 24px; }
+footer { padding: 48px 24px; flex-direction: column; }
+.product-body { padding: 28px 24px; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- ANNOUNCE -->
+
+<div class="announce">
+  &#128218; 2 Books + 120 Conversation Cards &middot; Complete Courtship Toolkit &middot; $27 &middot; Instant Download
+</div>
+
+<!-- NAV -->
+
+<nav>
+  <a href="#" class="logo">Koino<em>Cards</em></a>
+  <a href="https://morningkoinonia.selar.com/7xc443" target="_blank" class="nav-btn">Get The Bundle &mdash; $27 &rarr;</a>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+
+<section class="hero">
+  <div class="sp s1"></div>
+  <div class="sp s2"></div>
+  <div class="sp s3"></div>
+  <div class="sp s4"></div>
+  <div class="sp s5"></div>
+
+  <div class="hero-left">
+    <div class="hero-kicker">
+      <div class="hero-kicker-line"></div>
+      <div class="hero-kicker-text">The Ultimate Courtship Edition Toolkit</div>
+    </div>
+
+```
+<h1>
+  Don&rsquo;t just plan
+  a wedding.
+  <em>Build a marriage.</em>
+</h1>
+
+<div class="hero-hr"></div>
+
+<p class="hero-sub">
+  <strong>Two books and 120 conversation cards</strong> that help you see clearly, communicate honestly, and build the kind of marriage that still has a spark long after the wedding day.
+</p>
+
+<div class="bundle-badges">
+  <div class="bb">
+    <div class="bb-icon">&#128218;</div>
+    <div class="bb-label">
+      <strong>7 Courtship Patterns That Quietly Destroy Marriages</strong>
+      Identify the blind spots before they become lifelong struggles
+    </div>
+  </div>
+  <div class="bb">
+    <div class="bb-icon">&#128213;</div>
+    <div class="bb-label">
+      <strong>How to Build a Marriage That Still Has a Spark</strong>
+      The solution guide for lasting intimacy, safety, and passion
+    </div>
+  </div>
+  <div class="bb">
+    <div class="bb-icon">&#128156;</div>
+    <div class="bb-label">
+      <strong>120+ Courtship Conversation Cards</strong>
+      The conversations most couples avoid &mdash; made safe to have
+    </div>
+  </div>
+</div>
+
+<a href="https://morningkoinonia.selar.com/7xc443" target="_blank" class="hero-cta">
+  Get The Full Bundle &mdash; $27 &rarr;
+</a>
+<p class="hero-note">3 products &middot; Instant digital download &middot; Use tonight</p>
+```
+
+  </div>
+
+  <div class="hero-right">
+    <div class="price-card">
+      <div class="pc-kicker">Complete Bundle &mdash; Everything You Need</div>
+      <div class="pc-title">The Ultimate Courtship<br>Edition Toolkit</div>
+      <div class="pc-price">$27</div>
+      <div class="pc-note">One-time purchase &middot; Instant digital download</div>
+      <a href="https://morningkoinonia.selar.com/7xc443" target="_blank" class="pc-btn">
+        Get Instant Access &rarr;
+      </a>
+      <div class="pc-list">
+        <div class="pcl"><div class="pcl-dot"></div><span>Book 1 &mdash; 7 Courtship Patterns That Quietly Destroy Marriages</span></div>
+        <div class="pcl"><div class="pcl-dot"></div><span>Book 2 &mdash; How to Build a Marriage That Still Has a Spark</span></div>
+        <div class="pcl"><div class="pcl-dot"></div><span>120+ Conversation cards across key courtship categories</span></div>
+        <div class="pcl"><div class="pcl-dot"></div><span>Faith-integrated &middot; accessible to all couples</span></div>
+        <div class="pcl"><div class="pcl-dot"></div><span>For dating couples, engaged couples, and anyone heading toward marriage</span></div>
+      </div>
+      <div class="pc-divider"></div>
+      <div class="pc-guar">
+        &#128274; Secure checkout via Selar &middot; Instant access after payment<br>
+        Help? <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+
+<div class="stat-bar">
+  <div class="sb"><div class="sb-n">2</div><div class="sb-l">Books Included</div></div>
+  <div class="sb"><div class="sb-n">120+</div><div class="sb-l">Conversation Cards</div></div>
+  <div class="sb"><div class="sb-n">7</div><div class="sb-l">Patterns Exposed</div></div>
+  <div class="sb"><div class="sb-n">1</div><div class="sb-l">Marriage Protected</div></div>
+</div>
+
+<!-- ═══════════════════════ THE VOID ═══════════════════════ -->
+
+<section class="sec bg-ivory">
+  <div class="inn">
+    <div class="sl">The Reality</div>
+    <h2 class="bh">Most couples prepare for the wedding.<br>Almost none prepare for <em>the marriage.</em></h2>
+
+```
+<p class="p">You book the venue. You choose the dress. You plan the catering, the flowers, the honeymoon. You rehearse the vows. And then the day comes &mdash; and it is beautiful. And then the day goes.</p>
+
+<p class="p">And what is left is a marriage between two people who were so focused on the celebration that they never had the conversations that courtship was actually supposed to create. The ones about money and who manages it. About how you each handle conflict. About what you both carry from your families &mdash; the patterns, the wounds, the assumptions about what love is supposed to look like.</p>
+
+<p class="p">Nobody told you to have those conversations. Nobody gave you the framework. And so you entered the most important covenant of your life <strong>with full knowledge of each other&rsquo;s favourite foods and almost no knowledge of each other&rsquo;s deepest fears.</strong></p>
+
+<div class="pq">
+  <p>&ldquo;We thought we knew each other. We&rsquo;d been together for two years. But six months into marriage, patterns started showing up that neither of us had seen coming &mdash; because we&rsquo;d never asked the questions that would have revealed them.&rdquo;</p>
+</div>
+
+<p class="p">The patterns that quietly destroy marriages don&rsquo;t appear after the wedding. <strong>They were there during courtship &mdash; hidden in plain sight</strong> &mdash; in the things you didn&rsquo;t say, the conversations you avoided, the assumptions you both carried without knowing it.</p>
+
+<p class="p">This toolkit was built to change that.</p>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ DARK BREAK ═══════════════════════ -->
+
+<section class="sec bg-ink">
+  <div class="inn mid">
+    <div class="sl gold">The Stakes</div>
+    <h2 class="bh lt" style="letter-spacing:-1.5px;">The conversations you avoid during courtship<br><em>become the arguments you have in marriage.</em></h2>
+    <p class="p lt">Every couple that sits in a counsellor&rsquo;s office three years into marriage says the same thing: <strong>&ldquo;We should have talked about this before.&rdquo;</strong> The topics were never secret. The space to have them just never appeared.</p>
+    <p class="p lt">Courtship is not just a season of attraction. It is a season of discernment. It is the window when you still have the perspective and the distance to see clearly &mdash; before the daily rhythms of marriage blur what was visible.</p>
+    <p class="p lt">This toolkit gives you that window while it is still open. The books help you understand what to look for. The cards give you the actual conversations. Together, they give you <strong>the best possible foundation for the marriage you actually want to build.</strong></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ THE 7 PATTERNS ═══════════════════════ -->
+
+<section class="sec bg-off">
+  <div class="inn wide">
+    <div class="sl" style="color:#8B2A2A;">&#128218; Book One</div>
+    <h2 class="bh" style="max-width:680px;">7 courtship patterns that quietly destroy marriages <em>before the wedding ever happens.</em></h2>
+    <p class="p" style="max-width:640px;">These are not obvious red flags. They are the subtle dynamics that feel normal &mdash; even romantic &mdash; during dating, but quietly undermine everything once the commitment deepens.</p>
+
+```
+<div class="patterns-grid">
+  <div class="pattern-card">
+    <div class="pattern-num">01</div>
+    <div>
+      <div class="pattern-title">Mistaking Intensity for Intimacy</div>
+      <div class="pattern-desc">The relationship moves fast, feels electric, and seems like proof of something real. But intensity is not the same as depth. When the electricity settles, what is left if the foundation was never built?</div>
+    </div>
+  </div>
+  <div class="pattern-card">
+    <div class="pattern-num">02</div>
+    <div>
+      <div class="pattern-title">Avoiding the Hard Conversations</div>
+      <div class="pattern-desc">The topics that feel too serious, too heavy, or too risky to bring up during dating &mdash; money, past relationships, family dysfunction, sexual history, conflict styles &mdash; don&rsquo;t disappear. They wait.</div>
+    </div>
+  </div>
+  <div class="pattern-card">
+    <div class="pattern-num">03</div>
+    <div>
+      <div class="pattern-title">Performing Instead of Presenting</div>
+      <div class="pattern-desc">Showing the best version while managing what is seen. The relationship is built on a curated self rather than a real one &mdash; and eventually the performance becomes exhausting to maintain.</div>
+    </div>
+  </div>
+  <div class="pattern-card">
+    <div class="pattern-num">04</div>
+    <div>
+      <div class="pattern-title">Confusing Compatibility with Chemistry</div>
+      <div class="pattern-desc">Attraction is real and necessary. But chemistry tells you very little about whether two people can build a life together. Couples who marry on chemistry alone often find themselves incompatible on everything that actually runs a household.</div>
+    </div>
+  </div>
+  <div class="pattern-card">
+    <div class="pattern-num">05</div>
+    <div>
+      <div class="pattern-title">Bringing Unhealed Wounds to the Altar</div>
+      <div class="pattern-desc">Everyone brings history. The question is whether it has been processed or simply carried. Unhealed wounds from previous relationships, childhood, or family systems don&rsquo;t pause when you get married &mdash; they accelerate.</div>
+    </div>
+  </div>
+  <div class="pattern-card">
+    <div class="pattern-num">06</div>
+    <div>
+      <div class="pattern-title">Marrying Potential Instead of the Person</div>
+      <div class="pattern-desc">Falling in love with who someone could become rather than who they are right now. The marriage begins with the real person &mdash; and if that person wasn&rsquo;t truly accepted, resentment starts on day one.</div>
+    </div>
+  </div>
+  <div class="pattern-card">
+    <div class="pattern-num">07</div>
+    <div>
+      <div class="pattern-title">Skipping the Spiritual Alignment Conversation</div>
+      <div class="pattern-desc">Faith can be the greatest unifier or the deepest fault line in a marriage. Couples who never explored what they each actually believe &mdash; not just what church they attend &mdash; often discover the gap only after it matters most.</div>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ THE 3 PRODUCTS ═══════════════════════ -->
+
+<section class="sec bg-ivory">
+  <div class="inn wide">
+    <div class="sl">What&rsquo;s Inside the Bundle</div>
+    <h2 class="bh" style="max-width:640px;">Three products. One complete toolkit for <em>building the marriage you actually want.</em></h2>
+
+```
+<div class="products-stack">
+
+  <!-- BOOK 1 -->
+  <div class="product-card">
+    <div class="product-accent" style="background:#8B2A2A;"></div>
+    <div class="product-body">
+      <div class="product-tag" style="color:#8B2A2A;">&#128218; Book One &mdash; The Warning</div>
+      <span class="product-icon">&#128218;</span>
+      <div class="product-title">7 Courtship Patterns That Quietly Destroy Marriages</div>
+      <div class="product-desc">A clear-eyed guide that exposes the subtle relationship patterns most couples overlook &mdash; patterns that <strong>feel normal in dating but quietly undermine marriage later.</strong> This book helps you identify blind spots early, before they become lifelong struggles. Not to create fear, but to create sight. Because what you can name, you can address. And what you address before the wedding doesn&rsquo;t have to become a crisis after it.</div>
+    </div>
+  </div>
+
+  <!-- BOOK 2 -->
+  <div class="product-card">
+    <div class="product-accent" style="background:#1A4A3A;"></div>
+    <div class="product-body">
+      <div class="product-tag" style="color:#1A4A3A;">&#128213; Book Two &mdash; The Blueprint</div>
+      <span class="product-icon">&#128213;</span>
+      <div class="product-title">How to Build the Kind of Marriage That Still Has a Spark After the Wedding</div>
+      <div class="product-desc">This is the solution guide. You&rsquo;ll learn how <strong>emotionally healthy couples build intimacy, safety, passion, and spiritual alignment</strong> that endures &mdash; not just survives &mdash; after the wedding day. What the couples who make it actually do differently. How emotional safety gets built and protected. What keeps desire and partnership alive in the same marriage, in the same season. The frameworks for navigating conflict, raising children, building finances, and staying spiritually aligned &mdash; together.</div>
+    </div>
+  </div>
+
+  <!-- CARD DECK -->
+  <div class="product-card">
+    <div class="product-accent" style="background:#4A2060;"></div>
+    <div class="product-body">
+      <div class="product-tag" style="color:#4A2060;">&#128156; The Card Deck &mdash; The Conversation</div>
+      <span class="product-icon">&#128156;</span>
+      <div class="product-title">The Ultimate Courtship Edition Card Deck</div>
+      <div class="product-desc">120+ beautifully designed conversation cards created to help you have the conversations most couples avoid &mdash; <strong>safely and honestly.</strong> This is where insight turns into real dialogue. Where the patterns you identified in Book 1 become conversations. Where the blueprint from Book 2 becomes something you actually explore together.</div>
+      <div class="product-bullets">
+        <div class="pb"><div class="pb-dot" style="background:#4A2060;"></div><span>Discern alignment &mdash; not just attraction</span></div>
+        <div class="pb"><div class="pb-dot" style="background:#4A2060;"></div><span>Address healing, faith, purpose, money, roles, and communication</span></div>
+        <div class="pb"><div class="pb-dot" style="background:#4A2060;"></div><span>Have the conversations most couples avoid &mdash; before they become arguments</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Sample card -->
+<div class="sample-wrap">
+  <div class="sample-label">A Card from the Deck</div>
+  <div class="sample-card">
+    <div class="sample-cat">&#128156; Faith &amp; Spiritual Alignment</div>
+    <div class="sample-q">&ldquo;What does God being at the centre of a marriage actually look like to you in practice &mdash; not in theory?&rdquo;</div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ THE SOAR ═══════════════════════ -->
+
+<section class="sec bg-off">
+  <div class="inn wide">
+    <div class="sl">What Changes</div>
+    <h2 class="bh" style="max-width:640px;">Three things that shift when couples <em>go into marriage with open eyes.</em></h2>
+
+```
+<div class="tf-grid">
+  <div class="tfc">
+    <div class="tfc-n">01</div>
+    <div class="tfc-title">You see each other clearly</div>
+    <div class="tfc-body">Not the curated version. Not the performance. The real person &mdash; with their history, their wounds, their patterns, their faith, and their vision for the future. That clarity doesn&rsquo;t kill romance. It makes it honest. And honest love is the only kind that lasts.</div>
+  </div>
+  <div class="tfc">
+    <div class="tfc-n">02</div>
+    <div class="tfc-title">The hard conversations happen before they become crises</div>
+    <div class="tfc-body">The topics that couples spend years arguing about in marriage &mdash; money, in-laws, conflict styles, intimacy, purpose &mdash; are exactly the topics these cards create space for. You don&rsquo;t avoid them. You navigate them together, while you still have the safety of courtship to do it in.</div>
+  </div>
+  <div class="tfc">
+    <div class="tfc-n">03</div>
+    <div class="tfc-title">You enter the covenant with intention</div>
+    <div class="tfc-body">Not with hope alone. With discernment. With the knowledge of what you are choosing and why. With a shared language for the things that matter most. That foundation doesn&rsquo;t guarantee a perfect marriage &mdash; but it gives you the tools to build a real one.</div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ WHO THIS IS FOR ═══════════════════════ -->
+
+<section class="sec bg-ivory">
+  <div class="inn wide">
+    <div class="sl">Who This Is For</div>
+    <h2 class="bh" style="max-width:600px;">Anyone heading toward marriage who wants to <em>enter it with clarity.</em></h2>
+
+```
+<div class="who-grid">
+  <div class="wc">
+    <div class="wc-icon">&#128145;</div>
+    <div class="wc-title">Serious Dating Couples</div>
+    <div class="wc-desc">You&rsquo;re in a relationship that is heading somewhere real and you want to make sure you&rsquo;re building it on the right foundation. This toolkit gives you the conversations that courtship needs to include &mdash; before feelings get ahead of discernment.</div>
+  </div>
+  <div class="wc">
+    <div class="wc-icon">&#128144;</div>
+    <div class="wc-title">Engaged Couples</div>
+    <div class="wc-desc">You&rsquo;ve said yes. Now go deeper. Before the wedding happens, have the conversations that will shape the marriage. The books and cards in this toolkit cover exactly what pre-marital counselling often doesn&rsquo;t &mdash; in a way you can engage with at your own pace.</div>
+  </div>
+  <div class="wc">
+    <div class="wc-icon">&#128591;</div>
+    <div class="wc-title">Faith-Integrated Couples</div>
+    <div class="wc-desc">You want your relationship and your marriage to be built on something greater than attraction. This toolkit integrates faith naturally &mdash; exploring what spiritual alignment actually looks like in practice, not just in theory &mdash; without excluding couples from any background.</div>
+  </div>
+  <div class="wc">
+    <div class="wc-icon">&#128218;</div>
+    <div class="wc-title">The Intentional Couple</div>
+    <div class="wc-desc">You&rsquo;ve seen marriages fail around you. You&rsquo;ve watched patterns repeat across generations. And you are determined to do this differently &mdash; not just with good intentions, but with the tools and the conversations that give you an actual chance.</div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
+
+<section class="sec bg-off">
+  <div class="inn wide">
+    <div class="sl">What Couples Say</div>
+    <h2 class="bh" style="max-width:520px;">Couples who went into marriage <em>with their eyes open.</em></h2>
+
+```
+<div class="tg">
+  <div class="tc">
+    <div class="tc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="tc-text">&ldquo;The patterns book was confronting in the best way. I recognised three of the seven in our own relationship. We hadn&rsquo;t been dishonest &mdash; we just hadn&rsquo;t known to look. We spent two weeks working through the cards together and had conversations we&rsquo;d been circling for months.&rdquo;</div>
+    <div class="tc-name">Chidi &amp; Amaka O.</div>
+    <div class="tc-role">Engaged &middot; Lagos, Nigeria</div>
+  </div>
+  <div class="tc">
+    <div class="tc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="tc-text">&ldquo;We bought this six months before our wedding and used the cards on our date nights. The money and roles questions were the hardest &mdash; and the most necessary. We got married knowing things about each other that most couples only discover during their first year of conflict.&rdquo;</div>
+    <div class="tc-name">David &amp; Sarah K.</div>
+    <div class="tc-role">Married 2 years &middot; London, UK</div>
+  </div>
+  <div class="tc">
+    <div class="tc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="tc-text">&ldquo;The spark book changed how I thought about marriage entirely. I went in thinking a good marriage was about finding the right person. I came out understanding it was about being a regulated, aware, intentional partner. That&rsquo;s a completely different foundation.&rdquo;</div>
+    <div class="tc-name">Blessing N.</div>
+    <div class="tc-role">Engaged &middot; Accra, Ghana</div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROMISE ═══════════════════════ -->
+
+<div class="promise">
+  <h3>
+    The wedding is one day.<br>
+    The marriage is <em>every day after it.</em><br>
+    Prepare accordingly.
+  </h3>
+</div>
+
+<!-- ═══════════════════════ CTA ═══════════════════════ -->
+
+<section class="cta-sec" id="get">
+  <div class="cta-inner">
+    <div class="cta-kicker">Get The Complete Bundle Today</div>
+    <div class="cta-h">
+      Two books. 120 cards.<br>
+      <em>One marriage protected.</em>
+    </div>
+    <p class="cta-sub">
+      The Ultimate Courtship Edition Toolkit &mdash; everything you need to see clearly, communicate honestly, and build the kind of marriage that still has a spark long after the wedding day.
+    </p>
+
+```
+<div class="cta-price-row">
+  <span class="cta-sym">$</span>
+  <span class="cta-price">27</span>
+</div>
+<div class="cta-price-note">One-time purchase &middot; Instant digital download &middot; 3 products</div>
+
+<a href="https://morningkoinonia.selar.com/7xc443" target="_blank" class="cta-btn">
+  Get Instant Access &mdash; $27 &rarr;
+</a>
+
+<div class="cta-grid">
+  <div class="ci"><div class="ci-dot"></div><span><strong>Book 1</strong> &mdash; 7 Courtship Patterns That Quietly Destroy Marriages</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Book 2</strong> &mdash; How to Build a Marriage That Still Has a Spark</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>120+ Cards</strong> &mdash; The Ultimate Courtship Edition Deck</span></div>
+  <div class="ci"><div class="ci-dot"></div><span>Covers faith, money, conflict, roles, intimacy &amp; purpose</span></div>
+  <div class="ci"><div class="ci-dot"></div><span>For dating couples, engaged couples &amp; all backgrounds</span></div>
+  <div class="ci"><div class="ci-dot"></div><span>Instant download &mdash; start tonight</span></div>
+</div>
+
+<div class="cta-divider"></div>
+<div class="cta-guar">
+  &#128274; Secure checkout via Selar &middot; Instant access after payment &middot; No physical items shipped<br>
+  Having trouble? Email <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a> &mdash; I&rsquo;ll get it to you immediately.
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+
+<footer>
+  <div>
+    <div class="fl">Ultimate Courtship <em>Edition Toolkit</em></div>
+    <p>By KoinoCards &middot; T.BANKS</p>
+  </div>
+  <p style="text-align:right;">
+    <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a><br>
+    Digital product &middot; No physical items shipped<br>
+    Thank you for choosing to build something real. &mdash; T.BANKS xx
+  </p>
+</footer>
+
+</body>
+</html>
